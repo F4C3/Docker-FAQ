@@ -33,12 +33,14 @@ CMD ["nginx", "-g", "daemon off;"]
 
 `docker exec -it [CONTAINER ID] /bin/bash` - подключится к контейнеру по id ( b2edc8b47a63 )
 
+### Сеть
+```
 `docker network ls` -  список сетей
 
 `docker network inspect  [CONTAINER ID] | [CONTAINER NAME]` - Проверка контейнера, получение как можно большего количества информации о контейнере, от портов, переменных среды до точек монтирования, данных контрольной группы и т. д.
 
 `docker network create [имя сети]` - создать сеть в Docker
-
+```
 `docker run --rm -it --name container1 --net myNetwork nicolaka/netshoot /bin/bash` - Пример команды где --rm удаляет контейнер после закрытия, --name задаёт имя контейнера (не путать с CONTAINER ID ), --net помещает контейнер в соответствующую сеть, nicolaka/netshoot репозиторий docker с сетевыми утилитами, /bin/bash команда входа на созданный контейнер
 
 
