@@ -5,13 +5,13 @@
 ## Dockerfile
 
 ```
-FROM ubuntu:latest  
-RUN apt-get update  
-RUN apt-get install -y nginx  
-WORKDIR /data  
-VOLUME /data  
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+FROM ubuntu:latest - образ машины 
+RUN apt-get update - выполнить консольную команду 
+RUN apt-get install -y nginx - выполнить консольную команду 
+WORKDIR /data - рабочая директория в контейнере
+VOLUME /data - директория на хосте кторорая пробрасывается в контейнер
+EXPOSE 80 - открывает порт
+CMD ["nginx", "-g", "daemon off;"] - CMD — инструкция для запуска чего-либо во время запуска самого контейнера. 
 ```
 ## Консоль
 
