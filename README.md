@@ -2,7 +2,7 @@
 
 ---
 
-##Dockerfile
+## Dockerfile
 
 ```
 FROM ubuntu:latest  
@@ -13,7 +13,7 @@ VOLUME /data
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
-##Консоль
+## Консоль
 
 `docker build . -t test-nginx ` - Построить образ из Dockerfile
 
