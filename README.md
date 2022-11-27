@@ -5,7 +5,7 @@
 ## Dockerfile
 
 ```
-FROM ubuntu:latest - образ машины 
+FROM ubuntu:latest - образ операционной системы 
 RUN apt-get update - выполнить консольную команду 
 RUN apt-get install -y nginx - выполнить консольную команду 
 WORKDIR /data - рабочая директория в контейнере
