@@ -1,6 +1,6 @@
 # Docker-FAQ
 
-* [Список важнейших команд в Docker](https://medium.com/nuances-of-programming/мощнейший-список-команд-в-docker-b2a22747de12)
+[Список важнейших команд в Docker](https://medium.com/nuances-of-programming/мощнейший-список-команд-в-docker-b2a22747de12)
 ---
 
 ## Dockerfile
